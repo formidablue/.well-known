@@ -8,22 +8,29 @@
 
 			window.onload = function()
 			{
-				var url = window.location.href;
-				var intent = url.replace("https", "intent");
+				var ua = navigator.userAgent.toLowerCase();
+				var isAndroid = ua.indexOf("android") > -1; //&& ua.indexOf("mobile");
 
-				intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
+				if(isAndroid)
+				{
+					var url = window.location.href;
+					var intent = url.replace("https", "intent");
 
-				var anchor = document.createElement('a');
-				anchor.setAttribute('href', intent);
-				anchor.innerHTML = "Generated Intent Link 2";
-				document.body.appendChild(anchor);
+					intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
 
-				anchor.click();
+					var anchor = document.createElement('a');
+					anchor.setAttribute('href', intent);
+					anchor.setAttribute('id', "intentlink");
+					anchor.innerHTML = "Generated Intent Link 2";
+					document.getElementById("messageframe").appendChild(anchor);
+				}
+				else
+				{
+					document.getElementById("messageframe").innerHTML = "Visit this page using an android device.";
+				}
 			};
 
 		</script>
-
-		<a href="intent://formidablue.github.io/.well-known/?NzAwMDgwMDAxMDIwMDAwMDAwMTAwMzAwODAwMjAwMDA5MDcwMDA2MjQwMDA5MDUwMDAwMDAwMzAwMDAwMDA4MDAxMDU2MDAwMDQwMDAwNzAwNzM1Njg0MjkxNjI4NTkxMzQ3MTk0MzI3ODY1MjEzODY5NTc0ODc2MjQ1MTM5NDU5MTczNjgyMzY3NDEyOTU4OTgxNzU2NDIzNTQyOTM4NzE2#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end">Intent Link</a>
-		<br /><br />
+		<div id="messageframe"></div>
 	</body>
 </html>
