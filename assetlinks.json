@@ -4,7 +4,7 @@
     "namespace": "android_app",
     "package_name": "com.formidablue.sudokufingerpaint",
     "sha256_cert_fingerprints":
-    ["14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5"]
+    ["A5:32:E2:71:0F:8A:C2:99:83:70:76:0F:89:92:E1:B5:84:34:54:30:2F:F6:26:76:66:C8:1D:3B:B7:6D:49:BC"]
   }
   },
   {
@@ -13,6 +13,6 @@
     "namespace": "android_app",
     "package_name": "com.formidablue.sudokufingerpaint2",
     "sha256_cert_fingerprints":
-    ["14:6D:E9:83:C5:73:06:50:D8:EE:B9:95:2F:34:FC:64:16:A0:83:42:E6:1D:BE:A8:8A:04:96:B2:3F:CF:44:E5"]
+    ["B6:5D:8E:F6:16:B3:5D:98:D3:1F:42:F7:4B:C8:02:89:38:D1:BF:C2:00:AA:A4:48:34:B7:91:DA:EE:4A:A6:87"]
   }
 }]
