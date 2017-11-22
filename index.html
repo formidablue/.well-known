@@ -12,9 +12,15 @@
 				var intent = url.replace("https", "intent");
 
 				intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
-				alert(intent);
 
-				window.location.href = intent;
+				var anchor = document.createElement('a');
+				anchor.setAttribute('href', intent);
+				document.body.appendChild(anchor);
+
+				var fakeMouseEvent = document.createEvent('MouseEvents');
+				fakeMouseEvent.initMouseEvent("click", true, true, window, 0, 0, 0, 20, 10, false, false, false, false, 0, null);
+
+				anchor.dispatchEvent(fakeMouseEvent);
 			};
 
 		</script>
