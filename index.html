@@ -68,7 +68,7 @@
 				{
 					var url = window.location.href;
 					var intent = url.replace("https", "intent");
-					var intent2 = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint2;scheme=https;end");
+					var intent2 = intent.concat("#Intent;scheme=https;end");
 					intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
 
 					document.getElementById("messageframe").innerHTML = "<br/><br/><br/><a class='btn' href='" + intent + "'>Start Puzzle</a>";
