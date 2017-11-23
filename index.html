@@ -68,10 +68,10 @@
 				{
 					var url = window.location.href;
 					var intent = url.replace("https", "intent");
-					var link2 = intent.concat("#Intent;scheme=https;package=com.formidablue.*;end");
 					var link1 = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
+					var link2 = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint2;scheme=https;end");
 
-					document.getElementById("messageframe").innerHTML = "<br/><br/><br/><a href='" + link1 + "'><img src='https://sites.google.com/site/sudokufingerpaint/_/rsrc/1511436748238/install/sudoku-finger-paint-1.png?height=200&width=200'></a>";
+					document.getElementById("messageframe").innerHTML = "<br/>Select which app to use for opening the puzzle.<br/><br/><a href='" + link1 + "'><img src='https://sites.google.com/site/sudokufingerpaint/_/rsrc/1511436748238/install/sudoku-finger-paint-1.png?height=200&width=200'></a>";
 					document.getElementById("messageframe").innerHTML += "<a href='" + link2 + "'><img src='https://sites.google.com/site/sudokufingerpaint/_/rsrc/1511436748238/install/sudoku-finger-paint-2.png?height=200&width=200'></a>";
 				}
 				else
