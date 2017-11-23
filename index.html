@@ -23,7 +23,7 @@
 				margin: 0 auto;
 				display: block;
 			}
-			button
+			.btn
 			{
 				background: #91ff00;
 				background-image: -webkit-linear-gradient(top, #91ff00, #06b320);
@@ -44,7 +44,7 @@
 				padding: 20px 30px 20px 30px;
 				text-decoration: none;
 			}
-			button:hover
+			.btn:hover
 			{
 				background: #3cb0fd;
 				background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
@@ -70,7 +70,7 @@
 					var intent = url.replace("https", "intent");
 					intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
 
-					document.getElementById("messageframe").innerHTML = "<a href='" + intent + "'>Start Puzzle</a>";
+					document.getElementById("messageframe").innerHTML = "<a class="btn" href='" + intent + "'>Start Puzzle</a>";
 				}
 				else
 				{
