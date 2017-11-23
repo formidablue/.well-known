@@ -23,6 +23,10 @@
 				margin: 0 auto;
 				display: block;
 			}
+			button
+			{
+
+			}
 		</style>
 	</head>
 	<body>
@@ -37,14 +41,9 @@
 				{
 					var url = window.location.href;
 					var intent = url.replace("https", "intent");
-
 					intent = intent.concat("#Intent;package=com.formidablue.sudokufingerpaint;scheme=https;end");
 
-					var anchor = document.createElement('a');
-					anchor.setAttribute('href', intent);
-					anchor.setAttribute('id', "intentlink");
-					anchor.innerHTML = "Generated Intent Link 2";
-					document.getElementById("messageframe").appendChild(anchor);
+					document.getElementById("messageFrame").innerHTML = "<a href=" + intent + "><button>Start Puzzle</button></a>";
 				}
 				else
 				{
